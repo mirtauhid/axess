@@ -1,0 +1,38 @@
+.breadcrumb
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px
+    +media-lg()
+        display: flex
+    ul 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li
+            padding-right: 9px
+            margin-right: 9px
+            position relative
+            &:last-child:before
+                display: none
+            &:before
+                content: ''
+                height: 13px
+                width: 1px
+                background: #bbbbbb
+                transform: rotate(16deg)
+                position: absolute
+                right: 0
+                top: 3px
+                display: block
+            a
+                font-size: 13px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #bbbbbb
+            &.active
+                a
+                    color: $primaryblue

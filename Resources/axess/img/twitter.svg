@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <filter id="amnmz1uxha" width="143.8%" height="143.8%" x="-21.9%" y="-15.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <path id="lety55oq1b" d="M16 0c8.837 0 16 7.164 16 16 0 8.837-7.163 16-16 16S0 24.837 0 16C0 7.164 7.163 0 16 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-694 -5936) translate(149 5643) translate(533 281) translate(12 12)">
+                        <use fill="#000" filter="url(#amnmz1uxha)" xlink:href="#lety55oq1b"/>
+                        <use fill="#26A6D1" xlink:href="#lety55oq1b"/>
+                        <path fill="#FFF" d="M25.931 10.59c-.69.3-1.432.501-2.21.593.795-.466 1.405-1.203 1.692-2.082-.744.432-1.568.745-2.445.913-.702-.73-1.702-1.186-2.81-1.186-2.123 0-3.847 1.682-3.847 3.76 0 .294.034.582.1.857-3.198-.157-6.035-1.655-7.932-3.93-.331.556-.52 1.2-.52 1.89 0 1.304.678 2.457 1.71 3.13-.631-.02-1.223-.188-1.743-.47v.047c0 1.822 1.326 3.342 3.087 3.688-.323.085-.662.132-1.014.132-.247 0-.488-.023-.723-.067.49 1.494 1.91 2.581 3.596 2.611-1.318 1.01-2.977 1.61-4.78 1.61-.312 0-.618-.018-.92-.052 1.705 1.067 3.727 1.69 5.9 1.69 7.08 0 10.951-5.732 10.951-10.701l-.01-.487c.75-.53 1.402-1.191 1.918-1.946z"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

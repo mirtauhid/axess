@@ -1,0 +1,308 @@
+.blog-search-area
+    width: 100%
+    max-width: 750px
+    border-radius: 28px;
+    box-shadow: 0 2px 5px 0 rgba(3, 22, 28, 0.1);
+    background-color: $white;
+    position: relative
+    input[type="text"]
+        width: 100%
+        background: none
+        border: 0 none
+        border-radius: 28px
+        height: 50px
+        padding-left: 30px
+        padding-right: 80px
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $darkgrey;
+    button
+        position: absolute
+        right: 0
+        top: 0
+        height: 50px
+        width: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 0 none
+        background: none
+        cursor pointer
+        span
+            font-size: 20px
+
+.secondary-blog-container
+    width: 100%
+    padding-top: 80px
+    padding-bottom: 106px
+
+.secondary-blog
+    @extend .container
+    +media-lg()
+        max-width: 1141px
+        padding: 0
+    h2
+        font-family: 'Bebas Neue';
+        font-size: 54px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color:$black;
+        margin-bottom: 32px
+    h4
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 6px;
+        text-align: center;
+        color: $primaryblue;
+        margin-bottom: 6px
+
+.secondary-blog-item
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    background-color: $white;
+    overflow: hidden
+    margin-bottom: 30px
+.secondary-blog-image
+    overflow: hidden
+    position relative
+    +media-lg()
+        height: 200px
+    img
+        display: block;
+        width: 100%;
+    .blog-category
+        font-size: 14px;
+        font-weight: bold;
+        left: 20px
+        top: 20px
+        z-index 1
+        font-family: 'Bebas Neue';
+
+.secondary-blog-details
+    width: 100%
+    padding: 20px
+    text-align: left
+    +media-lg()
+        height: 162px
+    h3
+        font-size: 22px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.45;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 12px
+    p
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $darkgrey;
+    .blog-category
+        display: none
+        +media-md()
+            display: flex
+
+.secondary-blog-item--highlight
+    .secondary-blog-image
+        .blog-category
+            display: flex
+            +media-md()
+                display: none
+    +media-md()
+        display: flex
+        .secondary-blog-image
+            height: 362px
+        .secondary-blog-details
+            flex: 1
+            height: 362px
+            position relative
+            padding-top: 138px
+            .blog-category
+                font-size: 14px;
+                font-weight: bold;
+                left: 20px
+                top: 20px
+                z-index 1
+                font-family: 'Bebas Neue';
+
+.blog-hero-area
+    overflow: inherit
+    padding-bottom: 40px
+    +media-xl()
+        padding-bottom: 0
+    .hero-area
+        justify-content: flex-start
+        padding-top: 74px
+        h1
+            margin-bottom: 14px
+.blog-menu
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.03), inset 0 -1px 0 0 #e2e2e2;
+    background-color: $white;
+    width: 100%
+    max-width: 1141px
+    height: 70px
+    overflow-x: auto
+    @extend .container
+    position relative
+    +media-lg()
+        margin-top: -60px;
+    ul
+        display: flex
+        width: 790px
+        height: 100%
+        align-items: center
+        justify-content: center
+        padding: 0 20px
+        +media-md()
+            width: 100%
+        +media-xl()
+            padding: 0
+        li
+            height: 100%
+            transition: all ease 0.3s
+            margin-right: 30px
+            +media-lg()
+                margin-right: 70px
+            &:last-child
+                margin-right: 0
+            a
+                height: 100%
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.25;
+                letter-spacing: normal;
+                color: $black;
+                transition: all ease 0.3s
+                span
+                    font-size: 25px
+                    margin-right: 15px
+                    transition: all ease 0.3s
+                    &:before
+                        color: #bbbbbb
+                        transition: all ease 0.3s
+            &:hover, &.active
+                a
+                    color: #48b4ca
+                    span
+                        &:before
+                            color: #48b4ca
+
+
+.subpage-secondary-blog-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    position relative
+    background: $secondarywhite
+    +media-lg()
+        padding-top: 160px
+        background: $white
+    .blog-category
+        font-size: 14px;
+        font-weight: bold;
+        top: 70px
+        z-index 1
+        font-family: 'Bebas Neue';
+        display: none
+        +media-md()
+            display: inline-flex
+
+.subpage-secondary-blog-bg
+    position: absolute
+    top: 0
+    display: none
+    +media-md()
+        display: block
+
+.subpage-secondary-blog-content
+    width: 100%
+    max-width: 1141px
+    padding: 24px 20px;
+    background: $secondarywhite
+    position: relative;
+    z-index: 1;
+    +media-lg()
+        padding: 70px 98px 40px;
+        background: $white
+    .inline-tab-container
+        max-width: 751px
+        margin: 0 auto 60px;
+    h1, h2, h3, h4, h5, h6, p
+        max-width: 751px
+        margin: 0 auto
+    h1
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        margin-bottom: 20px
+        +media-lg()
+            font-size: 38px
+    p
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: left;
+        color: $darkgrey;
+        margin-bottom: 40px
+    h1 + p
+        font-size: 18px
+        text-align: center;
+
+    h3
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 10px
+
+.subpage-secondary-blog-image
+    width: 100%
+    margin-bottom: 32px
+    +media-lg()
+        margin-bottom: 60px
+    &:last-child
+        margin-bottom: 0
+    img
+        width: 100%
+        display: block
+
+.subpage 
+    .blog-container 
+        padding-bottom: 80px
+        .blog-item
+            +media-lg()
+                margin-bottom: 0
+        .btn
+            margin-top: 40px

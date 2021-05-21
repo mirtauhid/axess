@@ -1,0 +1,247 @@
+.privileges-list
+    padding-top: 40px
+    padding-bottom: 35px
+    position relative
+    +media-md()
+        padding-top: 80px
+        padding-bottom: 75px
+
+.privileges-list-filter
+    @extend .container
+    display: flex;
+    flex-direction: column
+    margin-bottom: 24px;
+    +media-md()
+        align-items: flex-end
+        justify-content: space-between
+        flex-direction: row
+    .icon-search
+        font-size: 48px
+
+.privileges-filter-result
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #bbbbbb;
+    margin-top: 20px
+    +media-md()
+        margin-top: 0
+
+.privileges-map
+    @extend .container
+
+.privileges-map-buttons
+    display: flex
+    margin-top: 12px
+    +media-md()
+        margin-top: 0
+    a
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+        color: #5d5864;
+        height: 22px
+        display: block;
+        border-bottom: 2px solid transparent
+        margin-left: 23px;
+        &:first-child
+            margin-left: 0
+        &.active
+            border-bottom: 2px solid #1e7ba5
+            color: #0078ab
+
+.privileges-details
+    @extend .container
+    > .row
+        align-items: flex-start
+        flex-direction: column-reverse
+        +media-lg()
+            flex-direction: row
+
+.privileges-detail-image
+    @extend .col-lg-5
+    position relative
+    margin-top: 32px
+    +media-lg()
+        margin-top: 0
+    > img
+        width: 100%
+    .wings-box-item-logo
+        bottom: 20px
+        left: 35px
+        width: 68px;
+        height: 67px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    .wings-box-logo
+        right: 15px
+        top: 30px
+.privileges-detail-content
+    @extend .col-lg-7
+    text-align: center
+    +media-md()
+        text-align: left
+    h1
+        font-size: 32px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 16px
+        text-align: left
+        +media-lg()
+            font-size: 36px
+    p
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        color: $darkgrey;
+        margin-bottom: 24px
+        text-align: left
+        +media-lg()
+            font-size: 18px
+    .btn
+        margin-bottom: 16px
+        &:last-child
+            margin-bottom: 0
+        +media-sm()
+            margin-bottom: 0
+        +media-max-sm()
+            margin-right: 0
+.privileges-info
+    display: flex
+    flex-direction: column
+    +media-lg()
+        flex-direction: row
+.privileges-info-item
+    flex: 1
+    border-radius: 2px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    border: solid 1px $border;
+    background-color: $white;
+    padding-top: 24px
+    padding-bottom: 24px
+    display: flex;
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 8px
+    &:last-child
+        margin-bottom: 0
+    +media-lg()
+        margin-bottom: 0
+        padding-bottom: 0
+        min-height: 228px
+        margin-right: 12px
+    .icon-calender
+        font-size: 31px
+    .icon-profile
+        font-size: 32px
+    .icon-card
+        font-size: 37px
+    span[class^="icon-"], span[class*=" icon-"]
+        color: #3587aa;
+        margin-bottom: 16px
+    h3
+        font-family: 'Bebas Neue';
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        margin-bottom: 8px
+    p
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: $darkgrey;
+    &:last-child
+        margin-right: 0
+
+.places
+    margin-bottom: 32px
+    &:last-child
+        margin-bottom: 0
+    h3  
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 16px
+
+.places-item
+    border: solid 1px #e7e7e7;
+    margin-bottom: 16px
+    &:last-child
+        margin-bottom: 0
+
+.places-header
+    border-bottom: solid 1px #e7e7e7;
+    background-color: #f7f7f7;
+    padding: 16px 30px 22px 24px;
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    +media-md()
+        justify-content: space-between
+        flex-direction: row
+    h4
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primaryblack;
+        margin-bottom: 12px
+        +media-md()
+            margin-bottom: 0
+    .working-hours
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: right;
+        color:$black;
+        strong
+            font-weight: bold
+
+.places-address
+    background: url("../img/address-bg.png") right center no-repeat;
+    background-size: cover;
+    min-height: 105px
+    width: 100%
+    a
+        display: block
+        width: 100%
+        height: 100%
+        padding: 16px 36px 25px 24px;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        color: #2a657f;

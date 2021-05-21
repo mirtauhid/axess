@@ -1,0 +1,150 @@
+.form-item
+    margin-bottom: 32px
+    font-size: 0
+    label
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 15px
+        display: block
+        .tooltip span[class^="icon-"]:before, .tooltip span[class*=" icon-"]:before
+            color: $black
+
+.form-element
+    width: 100%
+    position relative
+    .icon-warning
+        font-size: 16px
+        right: 16px;
+        top: 16px;
+        position: absolute
+        display: none
+        .path1:before
+            color: $red
+    select, input
+        width: 100%
+        border-radius: 2px;
+        border: solid 1px #d4d4d4;
+        background-color: $white;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #222327;
+        height: 48px
+        padding: 0 48px 0 16px
+        -webkit-appearance: none;
+        appearance:none;
+        &:focus
+            border: solid 1px $primaryblue
+        &::placeholder
+            color: $grey;
+
+.form-element-message
+    font-size: 11px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.09;
+    letter-spacing: 0.25px;
+    color: $red;
+    position: absolute
+    bottom: -16px
+    left: 16px
+    display: none
+
+.form-element--error
+    select, input
+        border: solid 1px $red  !important;
+        &::placeholder
+            color: #222327
+    .icon-warning, .form-element-message
+        display: block
+
+.form-item-multiple
+    display: flex
+    position relative
+    .form-item
+        flex: 1
+        margin-left: 20px
+        margin-bottom: 0
+        &:first-child
+            margin-left: 0
+
+.recaptcha
+    width: 100%
+    img
+        width: 100%
+        display: block
+
+.form-button
+    margin-top: 24px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+
+.form-item-checkbox, .form-item-radiobox
+    input[type="checkbox"],
+    input[type="radio"]
+        position absolute
+        opacity 0
+        z-index -1
+
+    label
+        position relative
+        display inline-block
+        padding 0 0 0 38px
+        cursor pointer
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        color: $black;
+        &::before
+            content " "
+            background: url("../img/checkbox.png") center center no-repeat;
+        &::before
+            position absolute
+            top 2px
+            left 0
+            display block
+            width 24px
+            height 24px
+
+    input[type="checkbox"]:checked + label::before,
+    input[type="radio"]:checked + label::before
+        background: url("../img/checkbox-selected.svg") center center no-repeat;
+        background-size: cover !important;
+
+    .form-element-message
+        position relative
+        left: auto
+        bottom: auto
+        padding-left: 38px
+        padding-top: 5px
+        line-height: 1.27;
+        letter-spacing: 0.25px;
+        font-size: 11px
+
+
+.milpoint-form-container
+    @extend .col-12
+    @extend .col-lg-6
+
+.milpoint-card-container
+    @extend .col-12
+    @extend .col-lg-6
+    display: none
+    +media-lg()
+        display: block

@@ -1,0 +1,85 @@
+.subpage
+    width: 100%
+    .wings-card-container
+        background: url("../img/wings-card-bg.png") $secondarywhite left bottom no-repeat;
+        +media-md()
+            background: url("../img/wings-card-bg.png") $secondarywhite left top no-repeat;
+
+.light-template
+    +media-lg()
+        background: $white
+    .wings-card-container
+        background: url("../img/wings-card-bg.png") $secondarywhite left bottom no-repeat;
+        +media-lg()
+            background: url("../img/wings-card-bg.png") $white left top no-repeat;
+
+.subpage-content
+    padding-top: 40px
+    padding-bottom: 40px
+    position relative
+    +media-lg()
+        padding-top: 80px
+        background: $white
+        padding-bottom: 80px
+
+.subpage-container
+    padding-top: 40px
+    padding-bottom: 40px
+    @extend .container
+    +media-lg()
+        padding-top: 80px
+        padding-bottom: 80px
+    h1, h2
+        font-size: 36px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        font-family: 'Bebas Neue';
+        margin-bottom: 32px
+    p
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        color: $darkgrey;
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+    h4
+        font-size: 20px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 4px
+    ul
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+        li
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.75;
+            letter-spacing: normal;
+            color: $darkgrey;
+            position: relative
+            padding-left: 8px
+            &:before
+                content: ''
+                width: 4px
+                height: 4px
+                border-radius: 4px
+                background: $primaryblue;
+                position: absolute
+                left: 0
+                top: 12px

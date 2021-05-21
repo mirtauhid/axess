@@ -1,0 +1,33 @@
+.subpage-container.campaign-result
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px
+    padding-top:0
+    +media-md()
+        padding-bottom: 122px
+    ul 
+        li
+            padding-left: 16px;
+            &:before
+                background-color: $darkgrey;
+                width: 6px
+                height: 6px
+                border-radius: 6px
+                top: 11px
+    span[class^="icon-"], span[class*=" icon-"]
+        margin-bottom: 32px
+        &:before
+            font-size: 32px
+    h5
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: $darkgrey;
+        margin-bottom: 71px
+        strong
+            font-weight: bold;

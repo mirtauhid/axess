@@ -1,0 +1,543 @@
+#header
+    position fixed
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 20
+    background-color: $white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.03), inset 0 -1px 0 0 #e2e2e2;
+    +media-lg()
+        position relative
+        left: auto
+        top: auto
+.overlay
+    position fixed
+    width: 100%;
+    height: 100%
+    z-index: 19
+    opacity: 0.8;
+    background-color: $black;
+    left: 0;
+    top: 0
+    display: none
+.sub-header
+    height: 32px
+    display: none
+    +media-lg()
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+    ul
+        display: flex
+        li
+            margin-left: 32px
+            &:first-child
+                margin-left: 0
+            a
+                font-size: 12px
+                font-weight: 500
+                color: $darkblue
+                display: flex
+                align-items: center
+                justify-content: center
+                span
+                    margin-right: 8px
+                    font-size: 20px
+.header
+    padding: 22px 0
+    display:  flex
+    align-items: center
+    justify-content: space-between
+    position relative
+    +media-lg()
+        padding: 16px 0 0 0
+        justify-content: center
+
+.logo
+    width: 78px
+    +media-lg()
+        width: 90px
+        margin-right: 16px
+    +media-xl()
+        width: 134px
+        margin-right: 32px
+    a, img
+        display: block;
+        width: 78px
+        +media-lg()
+            width: 90px;
+        +media-xl()
+            width: 134px
+
+.menu
+    display: none;
+    +media-lg()
+        flex: 1
+        display: flex
+        align-items: flex-start
+        justify-content: flex-end
+    .btn
+        margin-left: 12px
+        margin-right: 0
+        +media-xl()
+            margin-left: 20px
+    > ul
+        display: flex
+        +media-xxl()
+            padding-right: 27px
+        > li
+            margin-left: 12px
+            +media-xl()
+                margin-left: 24px
+            &:first-child
+                margin-left: 0
+            &:hover
+                .mega-dropdown-container
+                    z-index 1
+                    visibility: visible
+                    opacity 1
+                > a
+                    color: $primaryblue;
+            &.active
+                > a
+                    color: $primaryblue;
+            > a
+                font-size: 14px
+                color: $black
+                font-weight: 500
+                height: 64px
+                display: block
+                padding-top: 24px
+                transition: all ease 0.3s
+                
+                +media-xl()
+                    font-size: 16px
+                    padding-top: 16px
+    &.active
+        +media-max-lg()
+            width: 100%
+            height: 100%
+            position: fixed
+            left: 0
+            top: 72px
+            background: $white
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            > ul
+                flex-direction: column
+                margin-bottom: 24px
+                width: 100%
+                > li
+                    margin: 0
+                    > a
+                        height: 68px
+                        padding: 0
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        box-shadow: inset 0 -1px 0 0 #f0f1f1;
+            .btn--bordered-yellow
+                display: none
+
+
+.mega-dropdown-container
+    position: absolute
+    @extend .container
+    background: $white
+    height: 500px
+    z-index -1
+    visibility: hidden
+    opacity 0
+    left: 0
+    top: 80px
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s
+    +media-max-lg()
+        display: none !important
+
+.mega-dropdown-content
+    display: flex
+    flex: 1
+
+.mega-dropdown-menu
+    padding: 61px 0 0 25px
+    display: flex
+
+.mega-dropdown-box
+    flex: 1
+    padding: 0 25px 0 0
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+    align-content: center;
+    justify-content: flex-end;
+
+.mega-dropdown-info
+    width: 100%;
+    
+    border-top: 1px solid #e5e5e5
+    a
+        display: flex
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        color: $darkgrey;
+        align-items: center;
+        justify-content: center
+        height: 70px
+        span
+            font-size: 36px
+            margin-left: 13px
+
+.dropdown-privileges-item
+    padding: 0 15px;
+    width: 263px;
+    margin: 15px 0;
+
+.dropdown-privileges-item-content
+    height: 139px;
+    border-radius: 2px;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom, #bcdbe5, #bcdbe5);
+    padding: 10px
+    position: relative;
+    
+    a
+        display: block;
+        font-family: 'Bebas Neue';
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        color: $black;
+        position: relative;
+        height: 100%;
+        .icon-arrow
+            display: none;
+            font-size: 44px
+            position: absolute;
+            right: 0px;
+            bottom: -10px;
+            &:before
+                color: $white
+
+.mega-dropdown-menu-item
+    h4
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #222327;
+        margin-bottom: 8px
+    ul
+        display: inline-block
+        li
+            a
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $darkgrey;
+                padding: 8px 0
+                display: block
+
+.mobile-menu-btn
+    +media-lg()
+        display: none;
+    span[class^="icon-"], span[class*=" icon-"]
+        font-size: 24px
+        &:before
+            color: $primaryblue;
+
+.mobile-search-btn
+    +media-lg()
+        display: none;
+    span[class^="icon-"], span[class*=" icon-"]
+        font-size: 24px
+        &:before
+            color: $primaryblue;
+
+
+.mobile-search
+    width: 100%
+    padding: 24px 20px
+    box-shadow: inset 0 -1px 0 0 #f0f1f1, inset 0 1px 0 0 #f0f1f1;
+    background-color: $secondarywhite;
+    +media-lg()
+        display: none
+
+.mobile-search-input
+    width: 100%
+    position relative
+    input[type="text"]
+        width: 100%
+        border-radius: 25px;
+        border: solid 1px #f0f1f1;
+        background-color: $white;
+        height: 48px
+        padding: 0 78px 0 30px
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $darkgrey;
+    button
+        border: 0 none
+        background: none
+        display: block
+        padding: 0
+        margin: 0
+        width: 48px
+        height: 48px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        position: absolute
+        right: 0
+        top: 0
+        span
+            font-size: 18px
+            &:before
+                color: $primaryblue
+
+.search-container
+    position fixed
+    width: 100%;
+    height: 100%
+    background: rgba(33, 33, 33, 0.8)
+    left: 0;
+    top: 0
+    visibility: hidden
+    opacity 0
+    z-index -1
+    transition: all ease 0.3s
+    overflow-x: auto
+    +media-xl()
+        overflow-x: inherit
+    &.active
+        opacity 1
+        visibility: visible
+        z-index 21
+    // display: none
+
+.search-close
+    width: 100%
+    background: $white
+    position: fixed
+    top: 0
+    left: 0
+    .container
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+.search-close--button
+    width: 32px
+    height: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    span
+        font-size: 18px
+        &:before
+            color: $primaryblue
+
+.search-content
+    border-top: 1px solid #e5e5e5
+    @extend .container
+    background: $white
+    padding-top: 56px
+    padding-bottom: 0
+    +media-lg()
+        padding: 56px 0 0 0
+    h3
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        color: $darkgrey;
+        margin-bottom: 20px
+    > *
+        padding: 0 15px
+        +media-lg()
+            padding: 0 40px
+.search-content-input
+    width: 100%
+    position relative
+    margin-bottom: 56px
+    .icon-search2
+        position: absolute;
+        font-size: 20px
+        left: 39px
+        top: 16px
+        +media-lg()
+            left: 64px
+    input
+        border-radius: 26px;
+        box-shadow: 0 1px 4px 0 rgba(3, 22, 28, 0.05);
+        border: solid 1px #ececec;
+        width: 100%
+        height: 52px
+        padding: 0 24px 0 64px
+
+.most-searched-list
+    width: 100%
+    display: flex
+    padding-bottom: 8px
+    +media-lg()
+        padding-bottom: 40px
+
+.most-searched-list-item
+    flex: 1
+    h4
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #222327;
+        margin-bottom: 20px
+    ul
+        display: flex
+        flex-wrap: wrap
+        li
+            margin-right: 40px
+            margin-bottom: 16px
+            a
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $darkgrey;
+
+.search-result-list
+    width: 100%
+    padding: 0
+.search-result-list-flex
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding-top: 24px
+    +media-lg()
+        flex-direction: row
+        padding-top: 0
+
+.search-result-list-item
+    padding: 0 15px 24px
+    flex: 1
+    +media-lg()
+        padding: 0 40px 56px
+    h4
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: #222327;
+        margin-bottom: 20px
+    ul
+        li
+            margin-bottom: 16px
+            &:last-child
+                margin-bottom: 0
+            a
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $darkgrey;
+
+.search-result-list-item.result
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 40px
+    padding-top:0
+    span[class^="icon-"], span[class*=" icon-"]
+        margin-bottom: 32px
+        left: 50%;
+        margin-left: -16px;
+        position: relative;
+        +media-xl()
+            left: 35%
+        &:before
+            font-size: 32px
+    h5
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        color: $darkgrey;
+        margin-bottom: 71px
+        strong
+            font-weight: bold;
+    ul
+        li
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.75;
+            letter-spacing: normal;
+            color: $darkgrey;
+            position: relative
+            padding-left: 16px;
+            margin-bottom: 8px
+            &:before
+                content: ''
+                background-color: $darkgrey;
+                width: 6px
+                height: 6px
+                border-radius: 6px
+                top: 9px
+                position: absolute
+                left: 0
+                
+.search-result-list-more
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 24px 0
+    border-top: 1px solid #e5e5e5
+    a
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        color: $darkgrey;
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        strong
+            font-weight: bold
+        span
+            font-size: 36px
+            margin-left: 13px
+            &:before
+                color: $primaryblue

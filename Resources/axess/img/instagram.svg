@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <linearGradient id="y11ahl0xpc" x1="50%" x2="50%" y1="99.709%" y2=".777%">
+            <stop offset="0%" stop-color="#E09B3D"/>
+            <stop offset="30%" stop-color="#C74C4D"/>
+            <stop offset="60%" stop-color="#C21975"/>
+            <stop offset="100%" stop-color="#7024C4"/>
+        </linearGradient>
+        <linearGradient id="4iouxxx38d" x1="50%" x2="50%" y1="146.099%" y2="-45.16%">
+            <stop offset="0%" stop-color="#E09B3D"/>
+            <stop offset="30%" stop-color="#C74C4D"/>
+            <stop offset="60%" stop-color="#C21975"/>
+            <stop offset="100%" stop-color="#7024C4"/>
+        </linearGradient>
+        <linearGradient id="fj6gbg24we" x1="50%" x2="50%" y1="658.141%" y2="-140.029%">
+            <stop offset="0%" stop-color="#E09B3D"/>
+            <stop offset="30%" stop-color="#C74C4D"/>
+            <stop offset="60%" stop-color="#C21975"/>
+            <stop offset="100%" stop-color="#7024C4"/>
+        </linearGradient>
+        <filter id="m30a03t0ka" width="143.8%" height="143.8%" x="-21.9%" y="-15.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.20459692 0"/>
+        </filter>
+        <path id="hax7btrinb" d="M16 0c8.837 0 16 7.164 16 16 0 8.837-7.163 16-16 16S0 24.837 0 16C0 7.164 7.163 0 16 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-846 -5936) translate(149 5643) translate(697 293)">
+                    <g>
+                        <use fill="#000" filter="url(#m30a03t0ka)" xlink:href="#hax7btrinb"/>
+                        <use fill="#FFF" xlink:href="#hax7btrinb"/>
+                    </g>
+                    <path fill="url(#y11ahl0xpc)" fill-rule="nonzero" d="M19.51 8.276h-6.468c-2.628 0-4.766 2.138-4.766 4.766v6.467c0 2.629 2.138 4.767 4.766 4.767h6.467c2.629 0 4.767-2.138 4.767-4.767v-6.467c0-2.628-2.138-4.766-4.767-4.766zm3.156 11.233c0 1.744-1.413 3.157-3.157 3.157h-6.467c-1.743 0-3.157-1.413-3.157-3.157v-6.467c0-1.743 1.414-3.157 3.157-3.157h6.467c1.744 0 3.157 1.414 3.157 3.157v6.467z"/>
+                    <path fill="url(#4iouxxx38d)" fill-rule="nonzero" d="M16.276 12.138c-2.282 0-4.138 1.856-4.138 4.138 0 2.281 1.856 4.138 4.138 4.138s4.138-1.856 4.138-4.138-1.856-4.138-4.138-4.138zm0 6.666c-1.397 0-2.529-1.132-2.529-2.528 0-1.397 1.132-2.529 2.529-2.529 1.396 0 2.528 1.132 2.528 2.529 0 1.396-1.132 2.528-2.528 2.528z"/>
+                    <circle cx="20.414" cy="12.138" r="1.103" fill="url(#fj6gbg24we)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+.readmore
+    margin: 0 auto
+    width: 100%;
+    max-width: 750px
+    position relative
+    padding: 0 15px 40px
+    +media-lg()
+        overflow: hidden;
+        max-height: 320px;
+        padding: 0
+
+.readmore-collapse
+    max-height: 100%
+    overflow: inherit
+    .readmore-button
+        +media-lg()
+            display: none
+    .readmore-button.hide
+        +media-lg()
+            display: flex
+
+.readmore-button
+    position: absolute
+    left: 0
+    bottom: -60px
+    z-index 1
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -20%, #FAFAFA 23%);
+    width: 100%;
+    height: 140px
+    display: none
+    align-items: center;
+    justify-content: center;
+    +media-lg()
+        display: flex;
+    a
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $primaryblue;
+        border-bottom: 1px solid $primaryblue;
+        padding-bottom: 4px;
+
+.readmore-button.hide
+    height: 40px
+    position relative
+    bottom: auto
+    +media-lg()
+        display: none
+
+.light-template, .privileges-details
+    .readmore-button
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -20%, #FFF 23%);

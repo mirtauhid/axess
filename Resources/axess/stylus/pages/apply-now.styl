@@ -1,0 +1,84 @@
+.apply-now
+    padding: 0 !important
+.applynow-header
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        +media-md()
+            justify-content: flex-start;
+    .logo
+        width: 78px
+        +media-lg()
+            width: 90px
+            margin-right: 16px
+        +media-xl()
+            width: 134px
+            margin-right: 32px
+        a
+            display: flex;
+            width: 78px
+            align-items: center
+            justify-content: center
+            height: 72px
+            +media-md()
+                height: 120px
+                width: 150px
+            img
+                display: block
+                width: 100%
+
+.apply-now-container
+    background: url("../img/wings-hemen-basvur-bg.png") center top no-repeat;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+
+.applynow-banner
+    @extend .col-lg-6
+    background: url("../img/applynow-bg.png") center bottom no-repeat;
+    background-size: cover !important;
+    padding-top: 45px
+    text-align: center
+    +media-md()
+        height: 635px;
+    h1
+        font-size: 42px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white;
+        font-family: 'Bebas Neue';
+        margin-bottom: 8px
+    p
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white;  
+        margin-bottom: 15px
+    img
+        max-width: 100%
+
+.applynow-form
+    @extend .col-lg-6
+    background: $white;
+    padding-top: 24px
+    padding-bottom: 24px
+    +media-md()
+        height: 635px;
+        padding-top: 60px
+        padding-bottom: 0
+    .form-container
+        width: 100%
+        margin: 0 auto
+        +media-md()
+            width: 362px
+        .captcha-image
+            padding-top: 36px

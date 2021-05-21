@@ -1,0 +1,124 @@
+.btn
+    min-width: 180px
+    padding: 0 26px
+    display: inline-flex
+    height: 48px
+    align-items: center
+    justify-content: center
+    border-radius: 24px;
+    border: solid 2px $secondaryblue;
+    color: $primaryblue;
+    font-size: 14px
+    font-weight: 500;
+    margin-right: 20px
+    cursor pointer
+    &:last-child
+        margin-right: 0
+    span[class^="icon-"], span[class*=" icon-"]
+        font-size: 19px
+        margin-left: 13px
+    .icon-info2
+        position relative
+        top: -2px
+
+.btn--primary
+    box-shadow: 0 4px 13px 0 rgba(30, 132, 174, 0.2);
+    background: rgb(46,122,154);
+    background: linear-gradient(0deg, rgba(46,122,154,1) 50%, rgba(54,137,172,1) 100%);
+    border: 2px solid transparent;
+    color: $white
+
+.btn--secondary
+    box-shadow: 0 4px 10px 0 rgba(3, 22, 28, 0.1);
+    background-color: $white;
+    border: 2px solid transparent;
+    color: $primaryblue
+
+.btn--bordered-yellow
+    border: solid 2px $darkyellow;
+    color: $black;
+    span[class^="icon-"], span[class*=" icon-"]
+        &:before
+            color: $black
+    &.btn--multiline
+        color: $black;
+        strong
+            color: $black;
+
+.btn--bordered-lightblue
+    border: solid 2px #d6f0f9;
+    color: $white;
+    &.btn--multiline
+        color: $white;
+        strong
+            color: $white;
+
+.btn--bordered-blue
+    border: solid 2px $secondaryblue;
+    color: $primaryblue;
+    padding: 0 40px
+    &.btn--multiline
+        color: $primaryblue;
+        strong
+            color: $primaryblue;
+    &.btn--icon
+        span[class^="icon-"], span[class*=" icon-"]
+            &:before
+                color: $primaryblue
+
+.btn--bordered-black
+    border: solid 2px $primaryblack;
+    color: $black;
+    padding: 0 40px
+    &.btn--multiline
+        color: $black;
+        strong
+            color: $black;
+    &.btn--icon
+        span[class^="icon-"], span[class*=" icon-"]
+            &:before
+                color: $black
+
+.btn--inline
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $primaryblue;
+    display: inline-block;
+    border-bottom: 1px solid $primaryblue;
+
+.btn--multiline
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center
+    strong
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+
+.btn--icon
+    position relative
+    padding-left: 58px
+    padding-right: 20px
+    span[class^="icon-"], span[class*=" icon-"]
+        position: absolute;
+        margin: 0;
+        left: 20px;
+        top: auto;
+        &.icon-info2
+            &:before
+                color: $black
+        &:before
+            font-size: 24px
