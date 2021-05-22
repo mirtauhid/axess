@@ -1,4 +1,8 @@
-<div className="apply-now">
+import React from 'react';
+
+const hemenBasvur = () => {
+  return (
+    <div className="apply-now">
   <div className="apply-now-container">
     <header className="applynow-header">
       <div className="container">
@@ -99,3 +103,8 @@
     </section>
   </div>
 </div>
+
+  );
+};
+
+export default hemenBasvur;

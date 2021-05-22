@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const modals = () => {
+  return (
+    <>
   <div className="modals-container">
     <h1>TÜM MODAL LİSTESİ</h1>
     <blockquote>Bu sayfa ve sayfaya eklenen javascript kodları sadece modalların bir arada görüntülenebilmesi için oluşturulmuştur. Modallar angular tarafında yazılmalıdır.</blockquote>
@@ -117,3 +121,8 @@
     </div>
   </div>
 </>
+
+  );
+};
+
+export default modals;

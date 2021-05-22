@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const kampanyalarSonuc = () => {
+  return (
+    <>
   <div className="overlay" />
   <header id="header">
     <div className="container">
@@ -234,3 +238,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default kampanyalarSonuc;

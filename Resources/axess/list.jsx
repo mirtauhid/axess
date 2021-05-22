@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const list = () => {
+  return (
+    <>
   <div className="list-logo container">
     <img src="img/logo.svg" />
   </div>
@@ -115,3 +119,8 @@
     </ul>
   </div>
 </>
+
+  );
+};
+
+export default list;

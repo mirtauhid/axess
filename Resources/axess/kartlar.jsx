@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const kartlar = () => {
+  return (
+    <>
   <div className="overlay" />
   <header id="header">
     <div className="container">
@@ -282,3 +286,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default kartlar;

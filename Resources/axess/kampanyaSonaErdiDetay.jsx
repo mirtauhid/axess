@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const kampanyaSonaErdiDetay = () => {
+  return (
+    <>
   <div className="overlay" />
   <header id="header">
     <div className="container">
@@ -344,3 +348,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default kampanyaSonaErdiDetay;

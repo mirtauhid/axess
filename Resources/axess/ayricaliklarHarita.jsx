@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const ayricaliklarHarita = () => {
+  return (
+    <>
   <div className="overlay" />
   <header id="header">
     <div className="container">
@@ -227,3 +231,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default ayricaliklarHarita;

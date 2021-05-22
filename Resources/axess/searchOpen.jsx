@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const searchOpen = () => {
+  return (
+    <>
   <div className="overlay" />
   <div className="search-container active">
     <div className="search-close">
@@ -485,3 +489,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default searchOpen;

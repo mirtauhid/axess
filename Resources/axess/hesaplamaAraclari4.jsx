@@ -1,4 +1,8 @@
-<>
+import React from 'react';
+
+const hesaplamaAraclari4 = () => {
+  return (
+    <>
   <div className="overlay" />
   <header id="header">
     <div className="container">
@@ -450,3 +454,8 @@
     </div>
   </footer>
 </>
+
+  );
+};
+
+export default hesaplamaAraclari4;
