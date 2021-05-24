@@ -1,10 +1,10 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
-/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-script-url */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 
-const RuyaSehirler2 = () => {
+const AyricaliklarListe = () => {
     return (
         <>
             <div className="overlay" />
@@ -154,92 +154,156 @@ const RuyaSehirler2 = () => {
                     </div>
                 </div>
             </header>
-            <section id="content" className="light-template">
+            <section id="content">
                 <div className="subpage">
-                    <div className="hero-area-banner-container dream-cities-with-timer">
-                        <div className="hero-area-banner">
-                            <div className="hero-area-banner-content">
-                                <h1>RÜYA ŞEHİRLER</h1>
-                                <p>
-                                    Rüya Sehir biletleri sadece 444 25 25 Akbank Telefon Sube’si
-                                    <br />
-                                    üzerinden satın alınabilecektir. www.gezkanatlan.com‘da
-                                    <br />
-                                    sunulmamaktadır.
-                                </p>
-                            </div>
-                            <div className="dream-cities-timer">
-                                <ul>
-                                    <li>
-                                        <div className="dream-cities-timer-item">04</div>
-                                        <div className="dream-cities-timer-text">Gün</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">09</div>
-                                        <div className="dream-cities-timer-text">Saat</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">44</div>
-                                        <div className="dream-cities-timer-text">Dakika</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">49</div>
-                                        <div className="dream-cities-timer-text">Saniye</div>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div className="hero-area-container">
+                        <img src="img/privileges-image.jpg" />
+                        <div className="hero-area">
+                            <h1>AYRICALIKLAR</h1>
+                            <ul>
+                                <li>
+                                    <a href="/">ALIŞVERİŞ AYRICALIKLARI</a>
+                                </li>
+                                <li>
+                                    <a href="/">SAĞLIK - SPOR AYRICALIKLARI</a>
+                                </li>
+                                <li>
+                                    <a href="/">SEYEHAT AYRICALIKLARI</a>
+                                </li>
+                                <li>
+                                    <a href="/">RESTORAN AYRICALIKLARI</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div className="subpage-container">
-                        <div className="row">
-                            <div className="col-lg-8 offset-lg-2">
-                                <h2>KAMPANYA DETAYLARI</h2>
-                                <ul>
-                                    <li>Bu kampanya katılım gerektirmektedir.</li>
-                                    <li>
-                                        TAV Passport üyeligi Wings ve Axess Platinum sahiplerine
-                                        özel ilk alımlarında %15, yenilemelerde % 20 indirim ile
-                                        sunulacaktır.
-                                    </li>
-                                    <li>
-                                        12 taksite kadar taksit imkanı da sunulacaktır. Kampanya 1
-                                        Haziran 2018’e kadar geçerlidir.
-                                    </li>
-                                    <li>
-                                        İndirim ve taksit fırsatından sadece Wings, Wings Black,
-                                        Axess Platinum asıl/ek kart sahipleri faydalanabilir.
-                                    </li>
-                                    <li>
-                                        Bir müsteri aynı anda en fazla 9 adet TAV Passport satın
-                                        alabilir.
-                                    </li>
-                                    <li>
-                                        Duty Free’deki indirimler indirim yasaklı ürünler, alkol ve
-                                        tütünlü mamulleri için geçerli degildir.
-                                    </li>
-                                    <li>
-                                        TAV Passport üyeligi Wings ve Axess Platinum sahiplerine
-                                        özel ilk alımlarında %15, yenilemelerde % 20 indirim ile
-                                        sunulacaktır.
-                                    </li>
-                                    <li>
-                                        12 taksite kadar taksit imkanı da sunulacaktır. Kampanya 1
-                                        Haziran 2018’e kadar geçerlidir.
-                                    </li>
-                                    <li>
-                                        İndirim ve taksit fırsatından sadece Wings, Wings Black,
-                                        Axess Platinum asıl/ek kart sahipleri faydalanabilir.
-                                    </li>
-                                </ul>
+                    <div className="privileges-list">
+                        <div className="privileges-list-filter">
+                            <div className="privileges-dropdown-filter">
+                                <span className="icon-search">
+                                    <span className="path1" />
+                                    <span className="path2" />
+                                    <span className="path3" />
+                                </span>
+                            </div>
+                            <div className="privileges-filter-result">
+                                128 adet sonuç gösterilmektedir.
+                            </div>
+                        </div>
+                        <div className="wings-box wings-box--logo-grey">
+                            <div className="row">
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="wings-box-item">
+                                    <div className="wings-box-item-container">
+                                        <div className="wings-box-item-image">
+                                            <a href="/">
+                                                <img src="img/ayr-cal-k-1.jpg" />
+                                                <div className="wings-box-logo">
+                                                    <img src="img/logo.svg" />
+                                                </div>
+                                                <div className="wings-box-item-logo">
+                                                    <img src="img/privilages-logo.svg" />
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div className="wings-box-item-content">
+                                            <a href="/">Wings’e Özel Network’te 50 TL Chip-Para</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="show-more">
+                                <a href="/" className="btn--inline">
+                                    DAHA FAZLA AYRICALIK GÖSTER
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -429,4 +493,4 @@ const RuyaSehirler2 = () => {
     );
 };
 
-export default RuyaSehirler2;
+export default AyricaliklarListe;

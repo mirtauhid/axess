@@ -1,10 +1,11 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-const RuyaSehirler2 = () => {
+const Blog = () => {
     return (
         <>
             <div className="overlay" />
@@ -154,92 +155,234 @@ const RuyaSehirler2 = () => {
                     </div>
                 </div>
             </header>
-            <section id="content" className="light-template">
+            <section id="content">
                 <div className="subpage">
-                    <div className="hero-area-banner-container dream-cities-with-timer">
-                        <div className="hero-area-banner">
-                            <div className="hero-area-banner-content">
-                                <h1>RÜYA ŞEHİRLER</h1>
-                                <p>
-                                    Rüya Sehir biletleri sadece 444 25 25 Akbank Telefon Sube’si
-                                    <br />
-                                    üzerinden satın alınabilecektir. www.gezkanatlan.com‘da
-                                    <br />
-                                    sunulmamaktadır.
-                                </p>
-                            </div>
-                            <div className="dream-cities-timer">
-                                <ul>
-                                    <li>
-                                        <div className="dream-cities-timer-item">04</div>
-                                        <div className="dream-cities-timer-text">Gün</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">09</div>
-                                        <div className="dream-cities-timer-text">Saat</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">44</div>
-                                        <div className="dream-cities-timer-text">Dakika</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-seperator">:</div>
-                                    </li>
-                                    <li>
-                                        <div className="dream-cities-timer-item">49</div>
-                                        <div className="dream-cities-timer-text">Saniye</div>
-                                    </li>
-                                </ul>
+                    <div className="hero-area-container blog-hero-area">
+                        <img src="img/blog-hero-area.png" />
+                        <div className="hero-area">
+                            <h1>BLOG</h1>
+                            <div className="blog-search-area">
+                                <input type="text" placeholder="Lokasyon, gezi veya hobi arayın" />
+                                <button type="button">
+                                    <span className="icon-search2" />
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div className="subpage-container">
-                        <div className="row">
-                            <div className="col-lg-8 offset-lg-2">
-                                <h2>KAMPANYA DETAYLARI</h2>
-                                <ul>
-                                    <li>Bu kampanya katılım gerektirmektedir.</li>
-                                    <li>
-                                        TAV Passport üyeligi Wings ve Axess Platinum sahiplerine
-                                        özel ilk alımlarında %15, yenilemelerde % 20 indirim ile
-                                        sunulacaktır.
-                                    </li>
-                                    <li>
-                                        12 taksite kadar taksit imkanı da sunulacaktır. Kampanya 1
-                                        Haziran 2018’e kadar geçerlidir.
-                                    </li>
-                                    <li>
-                                        İndirim ve taksit fırsatından sadece Wings, Wings Black,
-                                        Axess Platinum asıl/ek kart sahipleri faydalanabilir.
-                                    </li>
-                                    <li>
-                                        Bir müsteri aynı anda en fazla 9 adet TAV Passport satın
-                                        alabilir.
-                                    </li>
-                                    <li>
-                                        Duty Free’deki indirimler indirim yasaklı ürünler, alkol ve
-                                        tütünlü mamulleri için geçerli degildir.
-                                    </li>
-                                    <li>
-                                        TAV Passport üyeligi Wings ve Axess Platinum sahiplerine
-                                        özel ilk alımlarında %15, yenilemelerde % 20 indirim ile
-                                        sunulacaktır.
-                                    </li>
-                                    <li>
-                                        12 taksite kadar taksit imkanı da sunulacaktır. Kampanya 1
-                                        Haziran 2018’e kadar geçerlidir.
-                                    </li>
-                                    <li>
-                                        İndirim ve taksit fırsatından sadece Wings, Wings Black,
-                                        Axess Platinum asıl/ek kart sahipleri faydalanabilir.
-                                    </li>
-                                </ul>
+                    <div className="blog-menu">
+                        <ul>
+                            <li className="active">
+                                <a href="/">
+                                    <span className="icon-tumu" />
+                                    Tümü
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <span className="icon-fly2" />
+                                    Seyahat
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <span className="icon-gurme" />
+                                    Gurme
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <span className="icon-like" />
+                                    Sağlık
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <span className="icon-smile" />
+                                    Yaşam
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    <span className="icon-filtre" />
+                                    Video Galeri
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="secondary-blog-container">
+                        <div className="secondary-blog">
+                            <h4>BLOG</h4>
+                            <h2>TÜM YAZILAR</h2>
+                            <div className="row">
+                                <div className="col-12 col-lg-8">
+                                    <div className="secondary-blog-item secondary-blog-item--highlight">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#ffbe04' }}
+                                            >
+                                                YOLCU KOLTUĞU
+                                            </span>
+                                            <h3>Picasso, Gaudi ve Miro’nun Buluştuğu Şehir</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine. Lorem ipsum dolor sit amet dolores no
+                                                preb lama so uno loraine. Lorem ipsum dolor sit
+                                                amet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#50802d' }}
+                                            >
+                                                DÜNYA
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#ffbe04' }}
+                                            >
+                                                YOLCU KOLTUĞU
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#cf7148' }}
+                                            >
+                                                ŞEREFLERDEN TARİFLER
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#029e54' }}
+                                            >
+                                                DÜNYA
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#8469a4' }}
+                                            >
+                                                EŞYA'NIN SIRRI
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#ffbe04' }}
+                                            >
+                                                YOLCU KOLTUĞU
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
+                                <div className="col-12 col-lg-4">
+                                    <div className="secondary-blog-item">
+                                        <div className="secondary-blog-image">
+                                            <img src="img/secondary-blog.jpg" />
+                                            <span
+                                                className="blog-category"
+                                                style={{ backgroundColor: '#50802d' }}
+                                            >
+                                                DÜNYA
+                                            </span>
+                                        </div>
+                                        <div className="secondary-blog-details">
+                                            <h3>Doğanın Eşsiz Harikaları Norveç Fiyortları</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet dolores no preblama so
+                                                uno loraine.
+                                            </p>
+                                        </div>
+                                        <a href="secondary-blog-item-link" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,4 +572,4 @@ const RuyaSehirler2 = () => {
     );
 };
 
-export default RuyaSehirler2;
+export default Blog;
